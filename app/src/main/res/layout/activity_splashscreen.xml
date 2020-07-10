@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:id="@+id/lnly_logo"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="277dp"
+            android:layout_height="277dp"
+            android:src="@drawable/logo_polda" >
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+
+        android:layout_marginTop="77dp"
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_below="@+id/lnly_logo"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/white"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/versionCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
