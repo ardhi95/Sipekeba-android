@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="9dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    android:text="Sign in"
+                    android:textSize="@dimen/activity_register_header_textSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Sign up"
+
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/activity_register_header_textSize" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="0.5"
+                android:text="Welcome to SIPEKEBA"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Let's get started"
+
+                android:textAlignment="textEnd"
+                android:textColor="@color/grayLight"
+                android:textSize="@dimen/activity_register_header_textSize" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_btnRegister_marginTop"
+                android:enabled="true"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_met_email_margin_top"
+                android:enabled="true"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_met_email_margin_top"
+                android:enabled="true"
+                android:hint="Email Address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_met_email_margin_top"
+                android:enabled="true"
+                android:hint="Password"
+
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_met_email_margin_top"
+                android:enabled="true"
+                android:hint="Re - Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/activity_register_btnRegister_marginTop"
+                android:paddingLeft="40dp"
+                android:paddingTop="10dp"
+                android:enabled="false"
+                android:paddingRight="40dp"
+                android:paddingBottom="10dp"
+                android:text="NEXT"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
