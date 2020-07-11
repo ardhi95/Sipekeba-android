@@ -1,2 +1,0 @@
-# Sipekeba
- Android apps
