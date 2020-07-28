@@ -17,9 +17,9 @@ public class LayananAdapter extends RecyclerView.Adapter<LayananAdapter.LayananV
 
     private boolean isLoading;
     private Context context;
-    private ArrayList<Layanan> list;
+    private List<Layanan> list;
 
-    public LayananAdapter(Context context, ArrayList<Layanan> list) {
+    public LayananAdapter(Context context, List<Layanan> list) {
         this.context = context;
         this.list = list;
     }
@@ -40,7 +40,7 @@ public class LayananAdapter extends RecyclerView.Adapter<LayananAdapter.LayananV
         }
 
         holder.txtNama.setText(layanan.getJenisBarang());
-        holder.txtDesc.setText(layanan.getCreated());
+        holder.txtDesc.setText(layanan.getKeterangan());
     }
 
     @Override
@@ -53,9 +53,9 @@ public class LayananAdapter extends RecyclerView.Adapter<LayananAdapter.LayananV
 
         public LayananViewHolder(View itemView) {
             super(itemView);
-            txtNama     = (TextView) itemView.findViewById(R.id.txt_nama);
-            txtDesc     = (TextView) itemView.findViewById(R.id.txt_desc);
-            txtDate     = (TextView) itemView.findViewById(R.id.txt_add);
+            txtNama     = (TextView) itemView.findViewById(R.id.textViewSub3Title);
+            txtDesc     = (TextView) itemView.findViewById(R.id.txtDesc);
+//            txtDate     = (TextView) itemView.findViewById(R.id.txt_add);
         }
     }
 

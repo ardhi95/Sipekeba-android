@@ -44,7 +44,7 @@ public class LayananActivity extends AppController {
     //======== RECYCLER VIEW =============/
     LayananAdapter adapter;
     Boolean is_running = true;
-    private ArrayList<Layanan> layananList;
+    private List<Layanan> layananList = new ArrayList<>();;
     //======== RECYCLER VIEW =============/
 
     @Override
@@ -72,8 +72,6 @@ public class LayananActivity extends AppController {
         dialogLoading.setCanceledOnTouchOutside(true);
         dialogLoading.setMessage(getResources().getString(R.string.please_wait));
         dialogLoading.show();
-
-//        layananList = new ArrayList<>();
 //        showDialog();
         RequestQueue queue = Volley.newRequestQueue(this.getApplicationContext());
         String url  = Constants.Extra.api_url+"Layanan/getList";

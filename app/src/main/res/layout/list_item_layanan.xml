@@ -1,33 +1,59 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="6dp"
     card_view:cardElevation="3dp"
     card_view:cardUseCompatPadding="true">
 
-    <LinearLayout
+    <net.colindodd.gradientlayout.GradientRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:orientation="vertical"
-        android:padding="5dp">
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        gl:end_color="@color/gradientLightYellow2"
+        gl:start_color="@color/gradientLightOrange2"
+        gl:orientation="LEFT_RIGHT"
+        android:padding="10dp">
 
         <TextView
-            android:id="@+id/txt_nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:id="@+id/textViewSub3Title"
+            style="@style/viewParent.headerText.HomeCardTitle" />
 
         <TextView
-            android:id="@+id/txt_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:id="@+id/txtDesc"
+            style="@style/viewParent.headerText.homeCardContent"
+            android:layout_below="@id/textViewSub3Title"/>
 
-        <TextView
-            android:id="@+id/txt_add"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <ImageView
+            android:maxHeight="60dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/tasks"
+            style="@style/homeCardImage" />
 
-    </LinearLayout>
+    </net.colindodd.gradientlayout.GradientRelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="5dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_nama"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_desc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_add"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    </LinearLayout>-->
 
 </androidx.cardview.widget.CardView>
