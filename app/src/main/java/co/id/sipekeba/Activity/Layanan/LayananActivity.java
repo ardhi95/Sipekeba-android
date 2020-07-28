@@ -138,13 +138,11 @@ public class LayananActivity extends AppController {
                             }
                             else
                             {
-                                dialogLoading.dismiss();
                                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                             }
                         }
                         catch(Exception e)
                         {
-                            dialogLoading.dismiss();
                             e.printStackTrace();
                             Toast.makeText(getApplicationContext(), "Error from apps with message: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
