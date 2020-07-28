@@ -29,7 +29,8 @@
             android:maxHeight="60dp"
             android:layout_marginRight="15dp"
             android:src="@drawable/tasks"
-            style="@style/homeCardImage" />
+            style="@style/homeCardImage"
+            android:visibility="gone"/>
 
     </net.colindodd.gradientlayout.GradientRelativeLayout>
 <!--    <LinearLayout-->
