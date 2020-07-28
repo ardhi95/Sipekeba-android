@@ -47,8 +47,8 @@ public class LoginActivity extends AppController {
     public static final String TAG = LoginActivity.class.getSimpleName();
     ProgressDialog pDialog;
 
-    @BindView(R.id.btnLogin)
-    Button btnLogin;
+//    @BindView(R.id.btnLogin)
+//    Button btnLogin;
     @BindView(R.id.txtRegister)
     TextView txtRegister;
     @BindView(R.id.met_username)
@@ -60,8 +60,8 @@ public class LoginActivity extends AppController {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
+        setContentView(R.layout.activity_register);
+//        ButterKnife.bind(this);
         beforeFilter(LoginActivity.this);
 
         activity = this;
@@ -108,19 +108,19 @@ public class LoginActivity extends AppController {
 
     }
 
-    @OnClick(R.id.btnLogin)
-    public void Clicklogin() {
-        String password = metPassword.getText().toString();
-        String username = metUsername.getText().toString();
-
-        if (username.isEmpty()) {
-            metUsername.setError("Insert username");
-        } else if (!Utilities.isValidPassword(password)) {
-            metPassword.setError("Password not valid");
-        } else {
-            SendingData(username, password);
-        }
-    }
+//    @OnClick(R.id.btnLogin)
+//    public void Clicklogin() {
+//        String password = metPassword.getText().toString();
+//        String username = metUsername.getText().toString();
+//
+//        if (username.isEmpty()) {
+//            metUsername.setError("Insert username");
+//        } else if (!Utilities.isValidPassword(password)) {
+//            metPassword.setError("Password not valid");
+//        } else {
+//            SendingData(username, password);
+//        }
+//    }
 
     @OnClick(R.id.txtRegister)
     public void Register() {
@@ -132,7 +132,7 @@ public class LoginActivity extends AppController {
     private void enableSubmitIfReady() {
         boolean isReady = metPassword.getText().toString().length() > 1 &&
                 metUsername.getText().toString().length() > 1;
-        btnLogin.setEnabled(isReady);
+//        btnLogin.setEnabled(isReady);
     }
 
     private void showDialog() {

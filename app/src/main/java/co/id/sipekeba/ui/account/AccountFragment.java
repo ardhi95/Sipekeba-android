@@ -50,7 +50,7 @@ public class AccountFragment extends Fragment {
     //===== Widget =====//
     View view;
     Button
-            btnLogin,
+            btnLoginFrg,
             btnRegister,
             btnSignout;
     TextView
@@ -98,16 +98,24 @@ public class AccountFragment extends Fragment {
 
         } else {
             view = inflater.inflate(R.layout.fragment_login, container, false);
-            btnLogin = view.findViewById(R.id.btnLogin);
+            btnLoginFrg = view.findViewById(R.id.btnLoginFrg);
             btnRegister = view.findViewById(R.id.btnRegister);
 
-            btnLogin.setOnClickListener(new View.OnClickListener() {
+            btnLoginFrg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Toast.makeText(getContext(), "Test", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getActivity(), LoginActivity.class);
                     startActivity(i);
                 }
             });
+//            btnLoginFrg.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent i = new Intent(getActivity(), LoginActivity.class);
+//                    startActivity(i);
+//                }
+//            });
 
             btnRegister.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -118,8 +126,6 @@ public class AccountFragment extends Fragment {
                 }
             });
         }
-
-
 
         return view;
     }

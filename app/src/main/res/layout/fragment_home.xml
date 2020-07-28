@@ -61,6 +61,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardLayanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 gl:cardCornerRadius="15dp"

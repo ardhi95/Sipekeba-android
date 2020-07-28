@@ -139,8 +139,57 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Test">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/filled_exposed_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.rengwuxian.materialedittext.MaterialEditText-->
+<!--            android:id="@+id/met_doob"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/activity_register_btnRegister_marginTop"-->
+<!--            android:enabled="true"-->
+<!--            android:hint="Name"-->
+<!--            android:imeOptions="actionNext"-->
+<!--            android:lines="1"-->
+<!--            android:maxLines="1"-->
+<!--            android:singleLine="true" >-->
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="none"-->
+<!--                />-->
+<!--        </com.rengwuxian.materialedittext.MaterialEditText>-->
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_register_btnRegister_marginTop"
+                android:enabled="true"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnNext"
+                android:id="@+id/btn_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -153,7 +202,6 @@
                 android:text="NEXT"
                 android:visibility="visible"
                 />
-
         </LinearLayout>
     </ScrollView>
 
