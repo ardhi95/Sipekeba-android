@@ -26,6 +26,7 @@
     <string name="failed_config_apps">Failed config apps for first time, please check your connection</string>
     <string name="please_wait">Please wait..</string>
     <string name="login_failed">LOGIN FAILED</string>
+    <string name="register_failed">REGISTER FAILED</string>
     <string name="error_parser_json">
         Oops sorry, it seems there is trouble with server. Please wait a second and than refresh your application.</string>
     <string name="drawer_open">Open</string>

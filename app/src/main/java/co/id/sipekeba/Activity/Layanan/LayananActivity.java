@@ -47,6 +47,7 @@ public class LayananActivity extends AppController {
     private List<Layanan> layananList = new ArrayList<>();;
     //======== RECYCLER VIEW =============/
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,7 @@ public class LayananActivity extends AppController {
         mRecyclerView = (RecyclerView) findViewById(R.id.mRecyclerView);
 
         // Set List Recycleview
-        adapter = new LayananAdapter(getApplicationContext(),layananList);
+        adapter = new LayananAdapter(LayananActivity.this,layananList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(LayananActivity.this);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(adapter);
@@ -65,6 +66,7 @@ public class LayananActivity extends AppController {
         getDataLayanan();
 
     }
+
 
     private void getDataLayanan(){
         dialogLoading = new ProgressDialog(LayananActivity.this);
