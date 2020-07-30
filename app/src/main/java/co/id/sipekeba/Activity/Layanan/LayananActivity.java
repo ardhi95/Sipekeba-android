@@ -1,14 +1,12 @@
 package co.id.sipekeba.Activity.Layanan;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import co.id.sipekeba.Activity.Account.ui.LoginActivity;
+import co.id.sipekeba.Adapter.LayananAdapter;
 import co.id.sipekeba.AppController;
 import co.id.sipekeba.Constants;
 import co.id.sipekeba.Models.Layanan;
 import co.id.sipekeba.R;
-import co.id.sipekeba.ui.account.AccountFragment;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;

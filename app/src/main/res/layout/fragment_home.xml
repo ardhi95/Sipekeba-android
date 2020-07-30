@@ -25,6 +25,7 @@
                 android:layout_marginBottom="20dp"/>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardLaporan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 gl:cardCornerRadius="15dp"

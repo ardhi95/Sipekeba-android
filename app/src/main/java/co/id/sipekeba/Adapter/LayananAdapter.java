@@ -1,38 +1,35 @@
-package co.id.sipekeba.Activity.Layanan;
+package co.id.sipekeba.Adapter;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import net.colindodd.gradientlayout.GradientRelativeLayout;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import co.id.sipekeba.Activity.Account.ui.RegisterActivity;
+import co.id.sipekeba.Activity.Layanan.DetailLayananActivity;
 import co.id.sipekeba.Models.Layanan;
 import co.id.sipekeba.R;
 
 public class LayananAdapter extends RecyclerView.Adapter<LayananAdapter.LayananViewHolder> {
 
     private boolean isLoading;
-//    private AppCompatActivity activity;
-    private Context context;
+    private AppCompatActivity activity;
+//    private Context context;
 
     private List<Layanan> list;
 
     public LayananAdapter(
-            Context context,
+            AppCompatActivity activity,
             List<Layanan> list)
     {
-        this.context = context;
+        this.activity = activity;
         this.list = list;
     }
 
@@ -59,7 +56,7 @@ public class LayananAdapter extends RecyclerView.Adapter<LayananAdapter.LayananV
             public void onClick(View v) {
                 Bundle bundle   =   new Bundle();
                 bundle.putString("id", layanan.getId());
-                context.startActivity(new Intent(context, DetailLayananActivity.class).putExtras(bundle));
+                activity.startActivity(new Intent(activity, DetailLayananActivity.class).putExtras(bundle));
             }
         });
     }
