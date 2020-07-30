@@ -220,7 +220,7 @@
                 android:enabled="false"
                 android:paddingRight="40dp"
                 android:paddingBottom="10dp"
-                android:text="NEXT"
+                android:text="REGISTER"
                 android:visibility="visible"
                 />
         </LinearLayout>
