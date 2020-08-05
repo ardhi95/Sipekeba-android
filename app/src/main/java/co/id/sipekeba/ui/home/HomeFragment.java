@@ -9,9 +9,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import co.id.sipekeba.Activity.Account.ui.LoginActivity;
 import co.id.sipekeba.Activity.Laporan.AddLaporanActivity;
 import co.id.sipekeba.Activity.Layanan.LayananActivity;
 import co.id.sipekeba.R;
+import co.id.sipekeba.UserFunctions;
+import co.id.sipekeba.ui.account.AccountFragment;
 
 public class HomeFragment extends Fragment {
 
@@ -26,6 +29,7 @@ public class HomeFragment extends Fragment {
 //        homeViewModel =
 //                ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+        UserFunctions userFunctions = new UserFunctions(this.getContext());
 
         cardLayanan = root.findViewById(R.id.cardLayanan);
         cardLaporan = root.findViewById(R.id.cardLaporan);
@@ -41,7 +45,12 @@ public class HomeFragment extends Fragment {
         cardLaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), AddLaporanActivity.class);
+                Intent i;
+                if (userFunctions.IsLogin()){
+                    i = new Intent(getActivity(), AddLaporanActivity.class);
+                } else {
+                    i = new Intent(getActivity(), LoginActivity.class);
+                }
                 startActivity(i);
             }
         });

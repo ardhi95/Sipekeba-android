@@ -9,7 +9,8 @@ public class Constants {
     public static class Extra {
 //        public static final String api_url                        = "http://sipekebaapi.myindotek.com/";
 //        public static final String api_url                        = "http://192.168.1.10/sipekebaApi/";
-        public static final String api_url                        = "http://192.168.43.211/sipekebaApi/";
+//        public static final String api_url                        = "http://192.168.43.211/sipekebaApi/";
+        public static final String api_url                        = "http://192.168.1.104/sipekebaApi/";
 
         public static final String token                            = "f0d4c3356f99d32dec2fa6bf46270dd9";
         public static final int TIME_OUT_REQUEST                    = 5000;
